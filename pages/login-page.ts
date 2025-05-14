@@ -9,7 +9,7 @@ export class LoginPage {
     async go() {
 
         //Vai para a página de login
-        if (!process.env.BASE_URL) throw new Error('BASE_URL não definida');
+        if (!process.env.BASE_URL) throw new Error('BASE_URL não definida.');
 
         const response = await this.page.goto(process.env.BASE_URL, {
             waitUntil: 'domcontentloaded',
